@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Image Grid</title>
+        <link rel="stylesheet" href="Assets/css/style.css">        
+    </head>
+<body>
+    <div class="container">    
+        <div class="login-container">
+            <form>
+                <div class="logo">
+                    <img src="Assets/images/Logo.png">
+               </div>
+               <div class="main-text">
+                    <h1>One app for your office activities</h1>
+                    <p>Welcome Back.Please login to your account</p>
+               </div>
+               <div class="login-btn">
+                    <button type="submit">Login with Office 365</button>
+               </div>
+            </form>
+        </div>
+        <div id="grid-container" class="grid-container"></div>
+    </div>
+    
+
+       <script>
+           const rows = 9;
+           const columns = 9;
+           const images = 17;
+           const imagesPath = 'assets/images/';
+           const imagesExtension = '.png';
+           const mainContainer = document.getElementById('grid-container');
+           const continerWidth = mainContainer.offsetWidth;
+           const continerHeight = mainContainer.offsetHeight;
+           const colWidth = continerWidth/columns;
+           const rowHeight = continerHeight/rows;
+
+
+           function createDiv(container, className) {
+               if(container){
+                   const divElement = document.createElement('div');
+                   divElement.classList.add(className)
+                   container.appendChild(divElement);
+                   return divElement
+               }else{
+                   console.error('no container available')
+               }
+           }
+
+           function getImage() {
+               return  imagesPath + (Math.floor(Math.random(images)*images) + 1) + imagesExtension;
+           }
+
+           function drawGrid(container) {
+               for (let i = 0; i < rows; i++) {
+                   const curRow = createDiv(mainContainer, 'row');
+                   curRow.style.height = rowHeight;
+                   curRow.style.width = continerWidth;
+                   for (let i = 0; i < columns; i++) {
+                       const curColBox = createDiv(curRow, 'square');
+                       curColBox.style.height = '100%';
+                       curColBox.style.width = colWidth;
+                       curColBox.style.backgroundImage = 'url('+getImage()+')';
+                   }
+               }
+           }
+
+           drawGrid(mainContainer);
+
+     </script>
+
+</body>    
+</html>

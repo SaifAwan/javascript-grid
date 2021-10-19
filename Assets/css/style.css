@@ -1,0 +1,232 @@
+body {margin:0px; font-family: arial; }
+
+.home-container .leftside-container {
+    float: left;
+    box-sizing: border-box;
+    height:60vh;
+    margin-left: 100px;
+    margin-top: 60px;
+    width:35vw;
+}
+
+.home-container .rightside-container{
+    background-image: url("../images/image1.png");
+    float:right;
+    width:56vw;
+    border:1px solid black;
+    height: 100vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-container .leftside-container .headingText {
+    margin-top:80px;
+    font-family:arial;
+    margin-bottom:60px;
+    
+}
+.home-container .leftside-container .headingText h1 {
+    font-weight: 500;
+    font-size:30px;
+}
+
+.home-container .leftside-container .headingText p{
+    margin-left:5px;
+    font-size:18px;
+}
+
+.form-wrapper {
+    position: relative;
+    margin-top:100px;
+   
+}
+.form-wrapper .form-area input {
+    border:1px solid #dcdfe8;
+    padding:42px 0px 15px 22px;
+    outline:none;
+    color:#fe336a;
+    width:35vw;
+}
+.form-wrapper .form-area label {
+    margin:20px 0px 0px 22px;
+    position: absolute;
+}
+.form-wrapper .form-area input:focus {
+    border-left:6px solid #fe336a;
+    padding-left:17px;
+}
+.help-container  a{ 
+    text-decoration: none;
+    color:#b4b5c4;
+}
+.help-container .checkbox{
+    float:left;
+  
+    margin-top:45px;
+}
+.help-container .forget-password{
+    float:right;
+    margin-top:45px;
+
+}
+.btn {
+    margin-top:125px;
+}
+.btn .loginbtn {
+    padding:20px 60px;
+    background: #fe336a;
+    border:1px solid #fe336a;
+    border-radius:8px;
+    color:white;
+    margin-right:13px;
+    font-size:17px;
+}
+.btn .signupbtn {
+    padding:20px 60px;
+    background:white;
+    border:1px solid #fe336a;
+    border-radius:8px;
+    color:#fe336a;
+    font-size:17px;
+}
+
+.main-container {
+    height:auto;
+  
+   
+}
+.main-container .left-container {
+    background: url(/Assets/images/side-nav.png);
+    height:auto;
+    padding-left:140px;
+    float:left;
+    width:40vw;
+}
+
+
+/* @media screen and (max-width:1230px){
+    
+    .home-container .rightside-container {
+        width:30vw;
+    }
+} */
+
+
+
+/*
+@media screen and (min-width:380px)and (max-width:400px){
+    .home-container .leftside-container{
+        width:62%;
+    }
+    .home-container .leftside-container .headingText h1{
+        font-size:20px;
+    }
+    .home-container .leftside-container .headingText p{
+        font-size:12px;
+    }
+    .home-container .leftside-container .help-container a {
+        font-size:12px;
+    }
+    .home-container .leftside-container .btn .loginbtn,.signupbtn {
+        padding:12px 40px;
+        margin:0px;
+    }
+}*/
+
+
+/*Login page 2 styling start */
+
+ /* .main-container .left-container{
+    background:url(../images/side-nav.png) no-repeat;
+    width:40vw;
+    
+}
+.main-container .rightimg-container{
+    float:right;
+    width:47vw;
+    margin-top:140px;
+} */
+
+.main-container .left-container {
+    background: url(../images/side-nav.png) no-repeat;
+    width:42vw;
+    height:100vh;
+}
+
+.main-container .rightimg-container{
+    float:right;
+    width:40vw;
+    padding-top:135px;
+}
+.main-container .left-container .form-container {
+    padding-left:80px;
+    padding-top:100px;
+}
+
+
+/* Image Grid login Screen styling */
+.container {
+    height:100vh;
+    width:100%;
+}
+.container .login-container{
+    float:left;
+    width:40%;
+    box-sizing: border-box;
+    border:1px solid;
+    height:100vh;
+}
+.login-container .logo{
+    padding:100px 0px 0px 110px;
+}
+.login-container .main-text {
+    padding:115px 0px 0px 110px;
+}
+.container .login-container .main-text h1{
+    font-size:25px;
+}
+.login-container form .login-btn{
+    padding:60px 0px 0px 108px;
+}
+.login-btn button {
+    padding:15px 132px;
+    background:#424a78;
+    color:white;
+    border:none;
+    font-size:15px;
+}
+.container .grid-container {
+    width: 60%;
+    height:100vh;
+    float:right;
+    background: #000000;
+}
+
+.row {
+    width: auto;
+    height: 100px;
+    background: #313131;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    outline: 1px solid;
+    display: inline-block;
+    background: #FFFFFF; 
+}
+
+.login-container form .app-download .google-play{
+    float:left;
+    padding-left:150px;
+}
+.login-container form .app-download .app-store{
+    float:right;
+    padding-right:150px;
+}
+
+    
+
+
